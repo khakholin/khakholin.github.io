@@ -1,5 +1,86 @@
 @import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
 
+html{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    max-width: 960px;
+    background-color: #eaeaea;
+    margin: 20px auto;
+
+    .profile{
+        max-width: 350px;
+        background-color: #39383a;
+        color: #ababab;
+        
+        &-photo{
+            height: 230px;
+            background-image: url(../../img/profile.png);
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        &-info{
+            padding: 50px 30px 70px 30px;
+
+            .contacts{
+                &-title{
+                    font-size: 16px;
+                    color: #ffffff;
+                    font-family: "Open Sans";
+                    font-weight: 400;
+                    margin: 0 0 13px 0;
+                }
+
+                &-text{
+                    font-size: 13px;
+                    color: #ababab;
+                    text-decoration: none;
+                    padding-left: 24px;
+                    font-family: "Open Sans";
+                    font-weight: 300;
+                    line-height: 20.97px;
+                }
+
+                &-item{
+                    padding: 24px 0 24px 0;
+                    border-bottom: 2px #5a5a5a dashed;
+                }
+            }
+        }
+
+        &-text{
+            line-height: 24.19px;
+            font-size: 13px;
+            font-family: Roboto;
+            font-weight: 300;
+        }
+
+        .heading{
+            font-size: 16px;
+            margin: 0;
+            padding: 0 0 16px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Open Sans";
+        }
+
+        .heading-light{
+            color: #ffffff;
+            border-bottom: 2px #5a5a5a dashed;
+        }
+    }
+}
+
+
+
+
+
+/*
 body{
     background: #e8e8e8;
 }
@@ -128,3 +209,4 @@ body{
         }
     }
 }
+*/
