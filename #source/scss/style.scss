@@ -510,4 +510,22 @@ html{
             height: 300px;
         }/*profile-photo*/
     }/*profile*/
+
+    .level{
+        width: 30%;
+    }/*level*/
+
+    .logo{
+        &-img{
+            width: 40px;
+            height: 40px;
+        }/*logo-img*/
+        
+        &-line{
+            width: 43px;
+            height: 2px;
+            background-color: #39383a;
+            margin: 2px 0 2px 0;
+        }/*logo-line*/
+    }/*logo*/
 }

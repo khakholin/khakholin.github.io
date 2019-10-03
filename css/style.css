@@ -552,4 +552,19 @@ html {
     .profile-photo {
       background-image: url(../../img/profile.jpg);
       height: 300px; }
-  /*profile*/ }
+  /*profile*/
+  .level {
+    width: 30%; }
+  /*level*/
+  .logo {
+    /*logo-img*/
+    /*logo-line*/ }
+    .logo-img {
+      width: 40px;
+      height: 40px; }
+    .logo-line {
+      width: 43px;
+      height: 2px;
+      background-color: #39383a;
+      margin: 2px 0 2px 0; }
+  /*logo*/ }
