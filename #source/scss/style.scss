@@ -119,6 +119,16 @@ html{
         font-family: "Open Sans";
         font-weight: 300;
         line-height: 20.97px;
+
+        &__link{
+            &-app{
+                padding-left: 6px;
+            }
+
+            &-web{
+                padding-left: 2px;
+            } 
+        }
     }/*contacts-text*/
 
     &-item{
@@ -127,7 +137,7 @@ html{
     }/*contacts-item*/
 }/*contacts*/
 
-.fas{
+.fas, .fab{
     margin-right: 7px;
 }/*fas*/
 
@@ -170,6 +180,7 @@ html{
     margin-bottom: 38px;
 
     &-img{
+        text-align: center;
         width: 90px;
         height: 90px;
         border: 2px solid #39383a;
@@ -418,11 +429,13 @@ html{
 }
 
 @media (max-width: 768px){
-    .container{
-        width: 90%;
-    }/*container*/
+    
 
     .profile{        
+        .container{
+            width: 90%;
+        }/*container*/
+
         &-photo{
             background-image: url(../../img/profile992.jpg);
             height: 250px;
@@ -519,14 +532,45 @@ html{
         &-img{
             width: 40px;
             height: 40px;
+            border: 1px solid #39383a;
+            font-weight: 400;
         }/*logo-img*/
-        
+
         &-lines{
-            margin: none;
+            margin: 0 0 0 0;
+    
+            &__left{
+                .logo-line:nth-child(2), .logo-line:nth-child(4){
+                    margin-right: 16px;
+                    width: 55px;
+                }
+            }
+    
+            &__left{
+                .logo-line:nth-child(3){
+                    margin-right: 24px;
+                    width: 60px;
+                }
+            }
+    
+            &__right{
+                .logo-line:nth-child(2), .logo-line:nth-child(4){
+                    margin-left: 16px;
+                    width: 55px;
+                }
+            }
+    
+            &__right{
+                .logo-line:nth-child(3){
+                    margin-left: 24px;
+                    width: 60px;
+                }
+            }
         }/*logo-lines*/
 
         &-line{
             margin: 2px 0 2px 0;
+            height: 1px;
         }/*logo-line*/
     }/*logo*/
 }
