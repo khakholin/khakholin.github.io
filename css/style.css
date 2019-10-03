@@ -558,13 +558,13 @@ html {
   /*level*/
   .logo {
     /*logo-img*/
+    /*logo-lines*/
     /*logo-line*/ }
     .logo-img {
       width: 40px;
       height: 40px; }
+    .logo-lines {
+      margin: none; }
     .logo-line {
-      width: 43px;
-      height: 2px;
-      background-color: #39383a;
       margin: 2px 0 2px 0; }
   /*logo*/ }

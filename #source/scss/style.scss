@@ -521,10 +521,11 @@ html{
             height: 40px;
         }/*logo-img*/
         
+        &-lines{
+            margin: none;
+        }/*logo-lines*/
+
         &-line{
-            width: 43px;
-            height: 2px;
-            background-color: #39383a;
             margin: 2px 0 2px 0;
         }/*logo-line*/
     }/*logo*/
