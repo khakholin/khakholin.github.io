@@ -189,11 +189,22 @@ html{
         justify-content: center;
         align-items: center;
         color: #39383a;
-        font-family: "Open Sans";
-        font-size: 18px;
-        font-weight: 700;
         text-transform: uppercase;
         letter-spacing: -1.15px;
+        &__second{
+            width: 82px;
+            height: 82px;
+            border: 2px solid #39383a;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #39383a;
+            font-size: 32px;
+            font-family: serif;
+            text-transform: uppercase;
+            letter-spacing: -1.15px;
+        }
     }/*logo-img*/
 
     &-lines{
@@ -278,7 +289,7 @@ html{
     text-transform: uppercase;
     letter-spacing: 10.75px;
     color: #39383a;
-    font-family: Roboto;
+    font-family: serif;
     font-weight: 500;
 }/*name*/
 
@@ -383,8 +394,8 @@ html{
         top: 0;
     }/*level:before*/
 
-    &-90:before{
-        width: 90%;
+    &-70:before{
+        width: 70%;
     }/*level-90:before*/
 
     &-80:before{
@@ -404,14 +415,8 @@ html{
     }/*level-50:before*/
 }/*level*/
 
-@media (max-width: 1024px){
-    .container{
-        width: 90%;
-    }
-    
-}
 
-@media (max-width: 992px){
+@media (max-width: 1024px){
     .container{
         flex-direction: column;
     }/*container*/
