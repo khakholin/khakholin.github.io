@@ -1,164 +1,374 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Personal site</title>
+        <title>Khakholin Alexander - frontend developer</title>
         <link rel="stylesheet" href="css/style.css" />
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
         <meta name="viewport" content="width=device-width">
         <script src="https://kit.fontawesome.com/6010edd914.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
     </head>
-    <body>
-        <div class="container">
-            <div class="profile">
-                <div class="profile-photo"></div>
-                <div class="profile-info">
-                        <h2 class="heading heading-light">Profile</h2>
-                        <p class="profile-text">Hello! I’m Khakholin Alexander. Web Developer specializing in front end development. Experience at the stages of design, layout and adaptive development. I also have experience working with languages such as JavaScript, Python, C++, C#, assembly language.</p>
-                        <div class="contacts">
-                            <div class="contacts-item">
-                                <h3 class="contacts-title">
-                                    <i class="fas fa-phone-alt"></i>
-                                    Phone
-                                </h3>
-                                <a href="tel:+79130052654" class="contacts-text">+7 (913) 005-26-54</a>
-                            </div><!--contacts-item-->
-                            <div class="contacts-item">
-                                <h3 class="contacts-title">
-                                    <i class="fas fa-envelope"></i>
-                                    Email
-                                </h3>
-                                <a href="mailto:khakholin@mail.ru" class="contacts-text">khakholin@mail.ru</a>
-                            </div><!--contacts-item-->
-                            <div class="contacts-item">
-                                <h3 class="contacts-title">
-                                    <i class="fas fa-globe-europe"></i>
-                                    Web
-                                </h3>
-                                <a href="http://khakholin.github.io" target="_blank" class="contacts-text">www.khakholin.com</a>
-                            </div><!--contacts-item-->
-                            <div class="contacts-item">
-                                <h3 class="contacts-title">
-                                    <i class="fab fa-vk"></i>
-                                    VK
-                                </h3>
-                                <a href="http://vk.com/khakholin" target="_blank" class="contacts-text">www.vk.com</a>
-                            </div><!--contacts-item-->
-                            <div class="contacts-item">
-                                <h3 class="contacts-title">
-                                    <i class="fab fa-instagram"></i>
-                                    Instagram
-                                </h3>
-                                <a href="http://instagram.com/khakholin" target="_blank" class="contacts-text">www.instagram.com</a>
-                            </div><!--contacts-item-->
-                            <div class="contacts-item">
-                                <h3 class="contacts-title">
-                                    <i class="fab fa-telegram-plane"></i>
-                                    Telegram
-                                </h3>
-                                <p class="contacts-text">APP:<a href="http://teleg.run/khakholin" target="_blank" class="contacts-text contacts-text__link-app">@khakholin</a></p>
-                                <p class="contacts-text">WEB:<a href="http://t.me/khakholin" target="_blank" class="contacts-text contacts-text__link-web">@khakholin</a></p>
-                            </div><!--contacts-item-->
-                        </div><!--contacts-->
-                        <h2 class="heading heading-light">Languages</h2>
-                        <div class="languages">
-                            <div class="language">
-                                <span class="language-text">Russian</span>
-                                <strong class="language-per">100%</strong>
-                            </div><!--language-->
-                            <div class="language">
-                                <span class="language-text">Eanglish</span>
-                                <strong class="language-per">50%</strong>
-                            </div><!--language-->
-                        </div><!--lines-->
-                </div><!--profile-info-->
-            </div><!--profile-->
-            <div class="resume">
-                <div class="resume-wrap">
-                    <div class="logo">
-                        <div class="logo-lines logo-lines__left">
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                        </div><!--logo-lines logo-lines_left-->
-                        <div class="logo-img">
-                            <div class="logo-img__second">k/a</div>
+    <body>        
+        <div class="burger">
+            <div class="burger-line"></div>
+        </div>
+        <div class="navigation">
+            <div class="navigation-container">
+                <div class="navigation-menu">
+                    <a href="#about" class="navigation-menu__item">about</a>
+                    <a href="#timeline" class="navigation-menu__item">timeline</a>
+                    <a href="#" class="navigation-menu__item">portfolio</a>
+                    <a href="#" class="navigation-menu__item">photos</a>
+                    <a href="#" class="navigation-menu__item">contacts</a>
+                </div>
+            </div>
+            <div class="navigation-social">
+                <a href="http://vk.com/khakholin" class="navigation-social__item" target="_blank"><i class="fab fa-vk"></i></a>
+                <a href="http://instagram.com/khakholin" class="navigation-social__item" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://github.com/khakholin" class="navigation-social__item" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-container">
+                <div class="main-logo">
+                    <div class="main-logo__lines main-logo__lines_left">
+                        <span class="main-logo__line"></span>
+                        <span class="main-logo__line"></span>
+                        <span class="main-logo__line"></span>
+                        <span class="main-logo__line"></span>
+                        <span class="main-logo__line"></span>
+                    </div>
+                    <div class="main-logo__circle main-logo__circle_external">
+                        <div class="main-logo__circle main-logo__circle_internal">
+                            <div class="main-logo__title">k/a</div>
                         </div>
-                        <div class="logo-lines logo-lines__right">
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                            <span class="logo-line"></span>
-                        </div><!--logo-lines logo-lines_right-->
-                    </div><!--logo-->
-                    <div class="about">
-                        <h1 class="name">Khakholin Alexander</h1>
-                        <p class="position">Web Developer</p>
-                        <address class="about-address">NOVOSIBIRSK, Russia</address>
-                        <div class="about-contacts">
-                            <a href="tel:+79130052654" class="about-contacts__link">
-                                <span class="about-contacts__bold">t</span>: +7 (913) 005-26-54
-                            </a>
-                            <span class="about-contacts__separator"> |</span> 
-                            <a href="mailto:khakholin@mail.ru" class="about-contacts__link">
-                                <span class="about-contacts__bold">e</span>: khakholin@mail.ru
-                            </a>
-                            <span class="about-contacts__separator"> |</span>    
-                            <a href="http://khakholin.github.io" target="_blank" class="about-contacts__link">
-                                <span class="about-contacts__bold">w</span>: www.khakholin.com
-                            </a>
-                        </div><!--about-contacts-->
-                    </div><!--about-->
-                    <div class="experience section">
-                        <h2 class="heading heading-dark">Experience</h2>
-                        <ul class="list">
-                            <li class="list-item">
-                                <h4 class="list-item__title">rid analytics company</h4>
-                                <p class="list-item__date">Jul 2019 - present</p>
-                                <p class="list-item__text">I am engaged in the development of projects in the language C#, I also have good experience working with regular expressions and XML.</p>
-                            </li>
-                        </ul>
-                    </div><!--experience-->
-                    <div class="education section">
-                        <h2 class="heading heading-dark">Education</h2>
-                        <ul class="list">
-                            <li class="list-item">
-                                <h4 class="list-item__title">Graduate (bachelor) of Applied Mathematics and Computer Science</h4>
-                                <p class="list-item__date">Sep 2015 - Jun 2019</p>
-                                <p class="list-item__text">Graduated from Novosibirsk State Technical University, faculty of applied mathematics and computer science in the field of programming, modeling and data analysis</p>
-                            </li>
-                            <li class="list-item">
-                                    <h4 class="list-item__title">Student (master) of Applied Mathematics and Computer Science</h4>
-                                    <p class="list-item__date">Sep 2019 - present</p>
-                                    <p class="list-item__text">I study at the Novosibirsk State Technical University, at the faculty of applied mathematics and omputer science in the field of computer modeling and high-tech software.</p>
-                                </li>
-                        </ul>
-                    </div><!--education-->
-                    <div class="skills section">
-                        <h2 class="heading heading-dark">Skills</h2>
-                        <ul class="skills-list">
-                            <li class="skills-list__item">HTML
-                                <div class="level level-70"></div>
-                            </li>
-                            <li class="skills-list__item">CSS/SASS
-                                <div class="level level-60"></div>
-                            </li>
-                            <li class="skills-list__item">Adaptive layout
-                                <div class="level level-80"></div>
-                            </li>
-                            <li class="skills-list__item">Photoshop
-                                <div class="level level-60"></div>
-                            </li>
-                            <li class="skills-list__item">JavaScript
-                                <div class="level level-50"></div>
-                            </li>
-                        </ul>
-                    </div><!--skills-->
-                </div><!--resume-wrap-->
-            </div><!--resume-->
-        </div> <!--container-->
+                    </div>
+                    <div class="main-logo__lines main-logo__lines_right">
+                        <span class="main-logo__line"></span>
+                        <span class="main-logo__line"></span>
+                        <span class="main-logo__line"></span>
+                        <span class="main-logo__line"></span>
+                        <span class="main-logo__line"></span>
+                    </div>    
+                </div>
+                <h1 class="main-title">khakholin alexander</h1>
+                <h2 class="main-subtitle">frontend developer</h2>
+            </div>
+            <a href="#about" class="main-button">
+                <div class="main-button__arrow"></div>
+            </a>
+        </div>  
+        <div class="about" id="about">
+            <div class="container about-container">
+                <div class="about-logo about__logo">
+                    <img src="img/about/logo.jpg" alt="logo image" class="about-logo__image">
+                    <div class="about-logo__title">Khakholin Alexander is a&nbsp;frontend developer<br>living in Novosibirsk</div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline" id="timeline">
+            <div class="container timeline-container">
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left"></div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__empty"></div>
+                    </div>
+                    <div class="timeline-block__none timeline-block__none_right"></div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-description timeline__description timeline__description_left">
+                        <div class="timeline-description__title">Intabia</div>
+                        <div class="timeline-description__subtitle">frontend developer</div>
+                        <div class="timeline-description__text"></div>
+                        <div class="timeline-skills timeline-skills_left">
+                            <div class="timeline-skills__item timeline-skills__item_left">HTML5</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">CSS3</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">ES5/6</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">Angular</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">React</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">Vue.js</div>
+                        </div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_work"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_left"></div>
+                    </div>
+                    <div class="timeline-block__none timeline-block__none_right">
+                        <div class="timeline-block__date">December 2019</div>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">September 2019</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_study"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">Novosibirsk State Technical University</div>
+                        <div class="timeline-description__subtitle">Started studying for a master</div>
+                    </div>
+                </div> 
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">August 2019</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_life"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">Web design self education</div>
+                        <div class="timeline-description__subtitle">Dig into HTML, CSS, JavaScript, watch and read a lot of training material and build my first web sites</div>
+                    </div>
+                </div> 
+                <div class="timeline-block">
+                    <div class="timeline-description timeline__description timeline__description_left">
+                        <div class="timeline-description__title">RID Analytics</div>
+                        <div class="timeline-description__subtitle">C# developer</div>
+                        <div class="timeline-description__text"></div>
+                        <div class="timeline-skills timeline-skills_left">
+                            <div class="timeline-skills__item timeline-skills__item_left">C#</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">.NET Framework</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">.NET Core</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">OOP</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">HTML</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">XML</div>
+                            <div class="timeline-skills__item timeline-skills__item_left">regular expressions</div>
+                        </div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_work"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_left"></div>
+                    </div>
+                    <div class="timeline-block__none timeline-block__none_right">
+                        <div class="timeline-block__date">July 2019</div>
+                    </div>
+                </div>
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">June 2019</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_study"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">Bachelor of Applied Mathematics and Computer Science</div>
+                        <div class="timeline-description__subtitle">Field of programming, modeling and data analysis</div>
+                    </div>
+                </div> 
+
+                <div class="timeline-year">
+                    <div class="timeline-year__border"></div>
+                    <div class="timeline-year__title">2019</div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">September 2015</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_study"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">Novosibirsk State Technical University</div>
+                        <div class="timeline-description__subtitle">Student life began</div>
+                    </div>
+                </div> 
+
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">June 2015</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_life"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">School graduation day</div>
+                        <div class="timeline-description__subtitle">So these 11 years ended...</div>
+                    </div>
+                </div> 
+
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">June 2015</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_life"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">Exams</div>
+                        <div class="timeline-description__subtitle">Passed on Russian language, mathematics and computer science</div>
+                    </div>
+                </div> 
+
+                <div class="timeline-year">
+                    <div class="timeline-year__border"></div>
+                    <div class="timeline-year__title">2015</div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">May 2012</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_life"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">Graduation from music school</div>
+                        <div class="timeline-description__subtitle">My first graduation with tape over my shoulder</div>
+                    </div>
+                </div> 
+
+                <div class="timeline-year">
+                    <div class="timeline-year__border"></div>
+                    <div class="timeline-year__title">2012</div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">June 2010</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_life"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">Photoshop self education</div>
+                        <div class="timeline-description__subtitle">I started making pictures, posters, artwork related to the game I was playing at that time</div>
+                    </div>
+                </div> 
+
+                <div class="timeline-year">
+                    <div class="timeline-year__border"></div>
+                    <div class="timeline-year__title">2010</div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">Оctober 2004</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_study"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">School of Music</div>
+                        <div class="timeline-description__subtitle">Learning to play the piano</div>
+                    </div>
+                </div> 
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">September 2004</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_study"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">Gymnasium #4</div>
+                        <div class="timeline-description__subtitle">The first training has begun</div>
+                    </div>
+                </div> 
+
+                <div class="timeline-year">
+                    <div class="timeline-year__border"></div>
+                    <div class="timeline-year__title">2004</div>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="timeline-block__none timeline-block__none_left">
+                        <div class="timeline-block__date">October 1997</div>
+                    </div>
+                    <div class="timeline-block__middle">
+                        <div class="timeline-block__circle timeline-block__circle_life"></div>
+                        <div class="timeline-block__vertical-line"></div>
+                        <div class="timeline-block__horizontal-line timeline-block__horizontal-line_right"></div>
+                    </div>
+                    <div class="timeline-description timeline__description timeline__description_right">
+                        <div class="timeline-description__title">Hello, World!</div>
+                        <div class="timeline-description__subtitle">I was born in Novosibirsk, Russia</div>
+                    </div>
+                </div> 
+                <div class="timeline-year">
+                    <div class="timeline-year__border"></div>
+                    <div class="timeline-year__title">1997</div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio-item">
+                <a href="http://khakholin.github.io/avtokompas" target="_blank">
+                    <img src="../img/portfolio/1.jpg" class="portfolio-item__image" alt="X">
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="http://khakholin.github.io/website" target="_blank">
+                    <img src="../img/portfolio/2.jpg" class="portfolio-item__image" alt="X">
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="http://khakholin.github.io/business_card_site" target="_blank">
+                    <img src="../img/portfolio/3.jpg" class="portfolio-item__image" alt="X">
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="#" target="_blank">
+                    <div class="portfolio-item__image"></div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="http://khakholin.github.io/business_card_site" target="_blank">
+                    <div class="portfolio-item__image"></div>
+                </a>
+            </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <div class="container contacts-container">
+                <a href="tel:+79130052654" class="contacts-item" target="_blank">
+                    <i class="contacts-item__icon fas fa-phone-alt"></i>
+                </a>
+                <a href="mailto:khakholin@mail.ru" class="contacts-item" target="_blank">
+                    <i class="contacts-item__icon fas fa-envelope-open-text"></i>
+                </a>
+                <a href="http://teleg.run/khakholin" class="contacts-item" target="_blank">
+                    <i class="contacts-item__icon fab fa-telegram-plane"></i>
+                </a>
+                <a href="http://vk.com/khakholin" class="contacts-item" target="_blank">
+                    <i class="contacts-item__icon fab fa-vk"></i>
+                </a>
+                <a href="http://instagram.com/khakholin" class="contacts-item" target="_blank">
+                    <i class="contacts-item__icon fab fa-instagram"></i>
+                </a>
+                <a href="http://github.com/khakholin" class="contacts-item" target="_blank">
+                    <i class="contacts-item__icon fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+         
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer__text">Created and written by Alexander Khakholin with HTML5, CSS3, JQuery</div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

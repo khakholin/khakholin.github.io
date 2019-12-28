@@ -1,0 +1,265 @@
+
+.timeline{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    &-container{
+        display: flex;
+        flex-direction: column;
+    }
+    &-description{
+        &__title{
+            @include main-font;
+            font-size: 25px;
+            margin-top: 1px;
+        }
+        &__subtitle{
+            margin-top: 5px;
+            font-family: sans-serif;
+            opacity: 0.7;
+        }
+        &__text{  
+            font-family: sans-serif;
+        }
+    }
+    &__description{
+        width: 47%;        
+        padding-bottom: 50px;
+        &_left{
+            padding-right: 10px;
+            text-align: right;
+        }
+        &_right{
+            padding-left: 10px;
+            text-align: left;
+        }
+    }
+    &-skills{
+        font-family: sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        &__item{
+            margin-top: 15px;
+            padding: 8px 16px;
+            color: rgba(165, 170, 208, 1);
+            background-color: rgba(237, 239, 246, 1);
+            &_left{
+                margin-left: 10px;
+            }
+            &_right{
+                margin-right: 10px;
+            }
+        }
+        &_left{
+            justify-content: flex-end;
+        }
+        &_right{
+            justify-content: flex-start;
+        }
+    }
+    &-block{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &__middle{
+            position: relative;
+            width: 6%;
+            display: flex;
+            justify-content: center;
+        }
+        &__none{
+            width: 47%;
+            margin-top: 7px;
+            display: flex;
+            &_left{
+                justify-content: flex-end;
+            }
+            &_right{
+                justify-content: flex-start;
+            }
+        }
+        &__date{
+            display: flex;
+            font-family: sans-serif;
+            font-size: 12px;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        &__empty{
+            height: 150px;
+            width: 1px;
+            background: linear-gradient(0, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 1));
+        }
+        &__circle{
+            z-index: 1;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            transform: scale(1);
+            &_work{
+                background-color: rgba($bgc-dark, 0.8);
+            }
+            &_study{
+                background-color: rgba($yellow, 0.8);
+            }
+            &_life{
+                background-color: rgba($green, 0.8);
+            }
+        }
+        &__vertical-line{
+            position: absolute;
+            top: 0;
+            left: calc(50% - 0.5px);
+            height: 100%;
+            width: 1px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        &__horizontal-line{
+            position: absolute;
+            top: 12px;
+            height: 1px;
+            width: calc(50% - 0.5px);
+            background-color: rgba(0, 0, 0, 0.3);
+            &_left{
+                left: 0;
+            }
+            &_right{
+                right: 0;
+            }
+            &_media{
+                right: 0;
+                display: none;
+            }
+        }
+    }
+    &-year{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 52px;
+        margin-bottom: 50px;
+        &__border{
+            width: 80px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            width: 61px;
+            &::before{
+                position: absolute;
+                bottom: 25px;
+                left: -15px;
+                content: '';
+                height: 1px;
+                width: 60px;
+                background-color: rgba(0, 0, 0, 0.3);
+                transform: rotate(-60deg);
+            }
+            &::after{
+                position: absolute;
+                bottom: 25px;
+                right: -15px;
+                content: '';
+                height: 1px;
+                width: 60px;
+                background-color: rgba(0, 0, 0, 0.3);
+                transform: rotate(60deg);
+            }
+        }
+        &:last-child{
+            margin-bottom: 0;
+            &::after{
+                display: none;
+            }
+        }
+        &::after{
+            position: absolute;
+            bottom: -50px;
+            content: '';
+            height: 50px;
+            width: 1px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        &__title{
+            position: absolute;
+            top: 60%;
+            @include main-font;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+@media (max-width: 600px){
+    .timeline{
+        &-container{
+            padding-top: 200px;
+        }
+        &-block{
+            &__horizontal-line{
+                left: calc(50% + 0.5px);
+                width: 40%;
+                &_left{
+                    right: 0;
+                }
+            }
+            &__vertical-line{
+                display: none;
+            }
+            &__empty{
+                position: absolute;
+                top: -150px;
+            }
+            &__middle{
+                width: 80px;
+                position: absolute;
+                left: 0;
+            }
+            &__none{
+                &_left{
+                    display: none;
+                }
+                &_right{
+                    display: none;
+                }
+            }
+        }
+        &__description{
+            position: relative;
+            width: 100%;    
+            padding-right: 0;
+            margin-left: 80px;
+            text-align: left;
+            padding-left: 0;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.3);
+                left: calc(-40.5px);
+            }
+        }
+        &-skills{
+            &__item{
+                &_left{
+                    margin-left: 0;
+                    margin-right: 10px;
+                }
+            }
+            &_left{
+                justify-content: flex-start;
+            }
+        }
+        &-year{
+            width: 50%;
+            justify-content: flex-start;
+            margin-left: 9.5px;
+            &__title{
+                margin-left: 19.5px;
+            }
+            &::after{
+                margin-left: 30px;
+            }
+        }
+    }
+}

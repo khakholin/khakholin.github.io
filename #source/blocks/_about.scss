@@ -1,0 +1,41 @@
+.about{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    &-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__logo{
+        width: 100%;
+    }
+    &-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__image{
+            margin-bottom: 50px;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+        &__title{
+            text-align: center;
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 40px;
+            font-family: sans-serif;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+    }
+}
+@media (max-width: 900px){
+    .about{
+        &-logo{
+            &__title{
+                font-size: 30px;
+            }
+        }
+    }
+}
